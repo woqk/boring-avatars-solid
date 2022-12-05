@@ -19,7 +19,7 @@ export default defineConfig({
       formats: ["es", "umd"],
     },
     rollupOptions: {
-      external: ['solid']
+      external: ['solid-js']
     }
   },
 });
