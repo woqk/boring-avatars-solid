@@ -13,7 +13,7 @@ export default defineConfig({
     minify: true,
     reportCompressedSize: true,
     lib: {
-      entry: resolve(__dirname, 'src/lib/index.ts'),
+      entry: resolve(__dirname, 'src/lib/Avatar.tsx'),
       name: 'BoringAvatarsSolid',
       fileName: (format) => `boring-avatars-solid.${format}.js`,
       formats: ["es", "umd"],
