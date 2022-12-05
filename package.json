@@ -10,8 +10,8 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/boring-avatars-solid.umd.cjs",
-  "module": "./dist/boring-avatars-solid.js",
+  "main": "dist/boring-avatars-solid.umd.cjs",
+  "module": "dist/boring-avatars-solid.js",
   "exports": {
     ".": {
       "import": "./dist/boring-avatars-solid.js",
