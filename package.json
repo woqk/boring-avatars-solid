@@ -15,7 +15,7 @@
   "exports": {
     ".": {
       "import": "./dist/boring-avatar.js",
-      "require": "./dist/my-boring-avatar.cjs"
+      "require": "./dist/boring-avatar.cjs"
     }
   },
   "scripts": {
