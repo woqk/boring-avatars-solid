@@ -13,11 +13,13 @@ export default defineConfig({
     minify: true,
     reportCompressedSize: true,
     lib: {
-      // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, 'src/lib/index.ts'),
+      entry: path.resolve(__dirname, 'src/lib/index.ts'),
       name: 'BoringAvatarsSolid',
-      // the proper extensions will be added
-      fileName: 'boring-avatars-solid'
+      fileName: (format) => `boring-avatars-solid.${format}.js`,
+      formats: ["es", "umd"],
     },
+    rollupOptions: {
+      external: ['solid']
+    }
   },
 });

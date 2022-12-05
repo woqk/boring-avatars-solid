@@ -10,12 +10,12 @@
   "files": [
     "dist"
   ],
-  "main": "dist/boring-avatars-solid.umd.cjs",
-  "module": "dist/boring-avatars-solid.js",
+  "main": "dist/boring-avatars-solid.umd.js",
+  "module": "dist/boring-avatars-solid.es.js",
   "exports": {
     ".": {
-      "import": "./dist/boring-avatars-solid.js",
-      "require": "./dist/boring-avatars-solid.umd.cjs"
+      "import": "./dist/boring-avatars-solid.es.js",
+      "require": "./dist/boring-avatars-solid.umd.js"
     }
   },
   "scripts": {
