@@ -38,6 +38,6 @@
     "url": "https://github.com/woqk/boring-avatars-solid"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/woqk"
   }
 }
