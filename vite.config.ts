@@ -12,9 +12,9 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, 'src/lib/index.ts'),
-      name: 'BoringAvatar',
+      name: 'BoringAvatarsSolid',
       // the proper extensions will be added
-      fileName: 'boring-avatar'
+      fileName: 'boring-avatars-solid'
     },
   },
 });
