@@ -2,7 +2,7 @@
   "name": "boring-avatars-solid",
   "description": "Boring avatars is a tiny JavaScript React library that generates custom, SVG-based, round avatars from any username and color palette.",
   "homepage": "https://boringavatars.com/",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": {
     "name": "woqk"
   },
@@ -10,25 +10,34 @@
   "files": [
     "dist"
   ],
-  "main": "dist/boring-avatars-solid.umd.js",
-  "module": "dist/boring-avatars-solid.es.js",
+  "main": "dist/cjs/Avatar.js",
+  "module": "dist/esm/Avatar.js",
+  "types": "dist/types/Avatar.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/boring-avatars-solid.es.js",
-      "require": "./dist/boring-avatars-solid.umd.js"
+      "solid": "./dist/source/Avatar.jsx",
+      "import": "./dist/esm/Avatar.js",
+      "browser": {
+        "import": "./dist/esm/Avatar.js",
+        "require": "./dist/cjs/Avatar.js"
+      },
+      "require": "./dist/cjs/Avatar.js",
+      "node": "./dist/cjs/Avatar.js"
     }
   },
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "rollup -c",
     "serve": "vite preview"
   },
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.8.2",
     "vite": "^3.0.9",
-    "vite-plugin-solid": "^2.3.0"
+    "vite-plugin-solid": "^2.3.0",
+    "rollup": "^2.77.2",
+    "rollup-preset-solid": "^1.4.0"
   },
   "dependencies": {
     "solid-js": "^1.5.1"
