@@ -2,7 +2,7 @@
   "name": "boring-avatars-solid",
   "description": "Boring avatars is a tiny JavaScript React library that generates custom, SVG-based, round avatars from any username and color palette.",
   "homepage": "https://boringavatars.com/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "woqk"
   },
