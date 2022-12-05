@@ -1,4 +1,6 @@
-declare module "boring-avatars" {
+import { VoidComponent } from "solid-js";
+
+declare module "boring-avatars-solid" {
   export interface AvatarProps {
     size?: number | string;
     name?: string;
@@ -8,7 +10,7 @@ declare module "boring-avatars" {
   }
 
   interface AvatarComponent {
-    (props: AvatarProps, context?: any): React.ReactElement | null;
+    (props: AvatarProps, context?: any): VoidComponent | null;
   }
 
   const Avatar: AvatarComponent
